@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4bh-JW-eb4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pagina inicial-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Pagina inicial" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-S1-8fJ">
+                                <rect key="frame" x="357" y="37" width="46" height="30"/>
+                                <state key="normal" title="Enviar"/>
+                                <connections>
+                                    <action selector="msg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mzT-iw-MTU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drinks-de-frutas.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fHL-03-zuL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-xU-OWS">
+                                <rect key="frame" x="-7" y="151" width="335" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
+                                <size key="titleShadowOffset" width="2" height="3"/>
+                                <state key="normal" title="Escolha o seu drink">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zBU-3g-Lei" kind="showDetail" id="ZfW-ak-Bp2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fHL-03-zuL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8sf-71-UmU"/>
+                            <constraint firstItem="fHL-03-zuL" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="HJJ-b6-k6x"/>
+                            <constraint firstItem="fHL-03-zuL" firstAttribute="centerX" secondItem="JfQ-xU-OWS" secondAttribute="centerX" id="Mug-Ls-9yv"/>
+                            <constraint firstItem="JfQ-xU-OWS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="199" id="YWR-dz-l7W"/>
+                            <constraint firstAttribute="trailing" secondItem="fHL-03-zuL" secondAttribute="trailing" id="YZO-d3-gKB"/>
+                            <constraint firstItem="fHL-03-zuL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZNc-QL-kcT"/>
+                            <constraint firstItem="JfQ-xU-OWS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-23" id="dpq-zf-e7n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JfQ-xU-OWS" secondAttribute="bottom" constant="182" id="hxh-bd-VrI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WDS-S1-8fJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="GxK-Kk-lNy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074" y="368"/>
+        </scene>
+        <!--Drink Mixer-->
+        <scene sceneID="9Zo-Vs-Pzu">
+            <objects>
+                <viewController title="Drink Mixer" id="DRD-Pp-ZAL" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2IN-5j-bVk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vXq-3q-x68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tDn-H5-iIM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BF3-kl-miR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DRD-Pp-ZAL" id="Gxt-hA-o7L"/>
+                                    <outlet property="delegate" destination="DRD-Pp-ZAL" id="ZKW-Sp-w9o"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BF3-kl-miR" firstAttribute="bottom" secondItem="vXq-3q-x68" secondAttribute="top" id="E0P-3b-rk6"/>
+                            <constraint firstAttribute="trailing" secondItem="BF3-kl-miR" secondAttribute="trailing" id="Lqg-gx-2dW"/>
+                            <constraint firstItem="BF3-kl-miR" firstAttribute="leading" secondItem="tDn-H5-iIM" secondAttribute="leading" id="OGX-to-Nz7"/>
+                            <constraint firstItem="BF3-kl-miR" firstAttribute="top" secondItem="tDn-H5-iIM" secondAttribute="top" id="Zih-zH-fgp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hbr-Ja-fO2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="R9W-iR-0a9">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="DRD-Pp-ZAL" id="yz5-3f-7ya"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="addButton" destination="R9W-iR-0a9" id="2aw-t7-Bnq"/>
+                        <outlet property="tableView" destination="BF3-kl-miR" id="5LB-Dd-HKs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35K-R5-pUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2187" y="1286"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="OrE-ic-nLh">
+            <objects>
+                <splitViewController id="4bh-JW-eb4" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="RdJ-s0-ke0" kind="relationship" relationship="masterViewController" id="Hgx-26-sxo"/>
+                        <segue destination="zBU-3g-Lei" kind="relationship" relationship="detailViewController" id="Nc2-jK-li0"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="638-oy-ILd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FU2-OV-Xw2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RdJ-s0-ke0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aeU-vk-c4z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bq9-cl-BUo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWI-ZO-1zo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SeC-0m-e5D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zBU-3g-Lei" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="BWB-UK-YpU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dUh-3y-zSK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DRD-Pp-ZAL" kind="relationship" relationship="rootViewController" id="mkd-ff-KnR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UmN-rj-ZcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1429" y="1286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="drinks-de-frutas.jpg" width="1074" height="671"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZfW-ak-Bp2"/>
+    </inferredMetricsTieBreakers>
+</document>
